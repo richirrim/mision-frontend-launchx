@@ -1,0 +1,60 @@
+/*-----------------------*\
+    $Variables
+\*-----------------------*/
+:root {
+    /* Paleta de colores */
+    --color-first: #e91e63;
+    --color-second: #c2185b;
+    --color-accent: #ffea00;
+    --color-bg: #fce4ec;
+    --color-white: #e0e0e0;
+    --color-text: #263238;
+
+    /* Tipografia */
+    --font-title: 'Rubik', sans-serif;
+    --font-content: 'Archivo Narrow', sans-serif;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.2rem;
+    --body-font-size: 1rem;
+    --small-font-size: .8rem;
+
+    --header-height: 60px;
+}
+
+
+/*-----------------------*\
+    $Base
+\*-----------------------*/
+*,
+*::after,
+*::before { box-sizing: border-box; }
+body {
+    font-size: var(--body-font-size);
+    font-family: var(--font-content);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+a { 
+    color: var(--color-accent);
+    text-decoration: none; 
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
+    margin-top: 0;
+    font-family: var(--font-title); 
+    text-transform: uppercase;
+}
+h1 { font-size: var(--h1-font-size); }
+h2 { font-size: var(--h2-font-size); }
+h3 { font-size: var(--h3-font-size); }
