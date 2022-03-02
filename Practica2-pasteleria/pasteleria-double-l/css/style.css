@@ -144,3 +144,36 @@ h3 { font-size: var(--h3-font-size); }
     .button:hover {
         background-color: var(--color-accent);
     }
+
+/*-----------------------*\
+    $Banner
+\*-----------------------*/
+.banner {
+    --padding: calc(var(--header-height) + 2) 1rem 3.5rem;
+    display: flex;
+    position: relative;
+    padding: var(--padding);
+    color: #fff;
+    text-align: center;
+    height: calc(var(--header-height) * 6);
+}
+    .banner > div { 
+        margin: auto; 
+    }
+    .banner__title {
+        margin-bottom: .2em;
+    }
+    .banner__description {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .banner__hero-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .14;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
