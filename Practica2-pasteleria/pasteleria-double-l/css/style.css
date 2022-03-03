@@ -20,6 +20,7 @@
     --small-font-size: .8rem;
 
     --header-height: 60px;
+    --max-width: 1000px;
 }
 
 
@@ -58,6 +59,29 @@ h6 {
 h1 { font-size: var(--h1-font-size); }
 h2 { font-size: var(--h2-font-size); }
 h3 { font-size: var(--h3-font-size); }
+
+/*-----------------------*\
+    $Base
+\*-----------------------*/
+.l-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: var(--max-width);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.l-section {
+    margin-bottom: 6rem;
+}
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-content { text-align: center; }
+
 
 /*-----------------------*\
     $Header
@@ -201,4 +225,44 @@ h3 { font-size: var(--h3-font-size); }
         height: 100%;
         object-fit: cover;
         object-position: center;
+    }
+
+
+/*-----------------------*\
+    $About
+\*-----------------------*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1em;
+    margin-bottom: 1em;
+    width: 50%; */
+    /* max-height: 1em; */
+    /* outline: 2px solid blue; */
+
+}
+    .about > div {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 2em;
+        /* outline: 2px solid; */
+        /* width: 50%; */
+    }
+    .about > div > div {
+        /* outline: 2px solid; */
+    }
+    .about__container {
+        /* outline: 10px solid red; */
+        flex-basis: 40%;
+    }
+    .about__description p:last-child {
+        margin-bottom: 0;
+    }
+    .about__image {
+        border-radius: 1em;
+        /* outline: 10px solid red; */
+        width: 26em;
+        box-shadow: rgba(0, 0, 0, 0.1) -3px 6px 6px;
     }
