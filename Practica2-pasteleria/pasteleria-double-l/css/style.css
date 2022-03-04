@@ -367,3 +367,22 @@ h3 { font-size: var(--h3-font-size); }
         display: flex;
         align-items: center;
     }
+
+
+/*-----------------------*\
+    $Contact
+\*-----------------------*/
+.main-footer {
+    display: flex; 
+    justify-content: space-between;
+    padding: 8em 6em;
+    background-color: var(--color-second);
+    color: #fff;
+    text-align: center;
+}
+    .main-footer span {
+        
+    }
+    .main-footer__logo {
+        /* width: 1000px; */
+    }
