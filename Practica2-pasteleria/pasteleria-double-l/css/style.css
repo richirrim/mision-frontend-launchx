@@ -94,8 +94,8 @@ h3 { font-size: var(--h3-font-size); }
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 4em;
         padding: 1em;
+        min-height: 4em;
     }
     .main-logo {
         width: initial;
