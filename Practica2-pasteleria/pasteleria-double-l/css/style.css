@@ -61,7 +61,7 @@ h2 { font-size: var(--h2-font-size); }
 h3 { font-size: var(--h3-font-size); }
 
 /*-----------------------*\
-    $Base
+    $Layout
 \*-----------------------*/
 .l-container {
     margin-left: auto;
@@ -172,7 +172,7 @@ h3 { font-size: var(--h3-font-size); }
 
 
 /*-----------------------*\
-    $icon
+    $icons
 \*-----------------------*/
 [class*=icon-]::before {
     --width: 1.5em;
@@ -370,7 +370,7 @@ h3 { font-size: var(--h3-font-size); }
 
 
 /*-----------------------*\
-    $Contact
+    $Footer
 \*-----------------------*/
 .main-footer {
     display: flex; 
