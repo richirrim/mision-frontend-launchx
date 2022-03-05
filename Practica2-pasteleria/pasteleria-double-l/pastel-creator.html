@@ -48,6 +48,7 @@
     </header>
     <main class="main  main__pastel-creator">
         <h1 class="title">Let´s Go!</h1>
+        <!-- ---------- $Base cakes --------------- -->
         <section class="base-cakes  l-section  l-container">
             <h2 class="base-cakes__title">Seleccion uno de los pasteles base</h2>
             <div class="card  card-cake">
@@ -66,6 +67,47 @@
                 <label class="card-cake__label" for="cake3">Tres niveles</label>
             </div>
         </section>
+        <!-- ---------- $Favlors --------------- -->
+        <section id="js-flavors" class="flavors  l-section  l-container">
+            <h2 class="flavors__title">Selecciona máximo dos sabores</h2>
+            <span class="flavors__number-selected-flavors">Sabores seleccionados: <span id="js-selected-flovers">0/2</span></span>
+            <div class="card  card-flavor">
+                <div class="card  card-flavor__color"></div>
+                <span class="card-flavor__price">$15MXN</span>
+                <input class="card-cake__checket" type="checkbox" id="vanilla" name="flavor1" value="vanilla">
+                <label class="card-cake__label" for="flavor1">Vainilla</label>
+            </div>
+            <div class="card  card-flavor">
+                <div class="card  card-flavor__color  card-flavor__vanilla"></div>
+                <span class="card-flavor__price">$15MXN</span>
+                <input class="card-cake__checket" type="checkbox" id="chocolate" name="flavor2" value="chocolate">
+                <label class="card-cake__label" for="flavor2">Chocolate</label>
+            </div>
+            <div class="card  card-flavor">
+                <div class="card  card-flavor__color  card-flavor__vanilla"></div>
+                <span class="card-flavor__price">$15MXN</span>
+                <input class="card-cake__checket" type="checkbox" id="limon" name="flavor3" value="limon">
+                <label class="card-cake__label" for="flavor3">Limon</label>
+            </div>
+            <div class="card  card-flavor">
+                <div class="card  card-flavor__color  card-flavor__vanilla"></div>
+                <span class="card-flavor__price">$16MXN</span>
+                <input class="card-cake__checket" type="checkbox" id="uva" name="flavor4" value="uva">
+                <label class="card-cake__label" for="flavor4">Uva loca</label>
+            </div>
+            <div class="card  card-flavor">
+                <div class="card  card-flavor__color  card-flavor__vanilla"></div>
+                <span class="card-flavor__price">$15MXN</span>
+                <input class="card-cake__checket" type="checkbox" id="mora" name="flavor5" value="mora">
+                <label class="card-cake__label" for="flavor5">Mora azul</label>
+            </div>
+            <div class="card  card-flavor">
+                <div class="card  card-flavor__color  card-flavor__vanilla"></div>
+                <span class="card-flavor__price">$18MXN</span>
+                <input class="card-cake__checket" type="checkbox" id="chamoyada" name="flavor6" value="chamoyada">
+                <label class="card-cake__label" for="flavor6">Chamoyada</label>
+            </div>
+        </section>
     </main>
     <footer class="main-footer">
         <a class="main-footer__logo" href="./">
@@ -73,5 +115,6 @@
         </a>
         <span>© All rights reserved Pasteles Double L inc. 2022</span>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
