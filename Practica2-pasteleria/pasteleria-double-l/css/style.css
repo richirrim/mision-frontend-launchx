@@ -408,6 +408,11 @@ h3 { font-size: var(--h3-font-size); }
         margin-right: auto;
         margin-bottom: .5em;
     }
+    .card-cake__price {
+        display: inline-block;
+        font-size: 1.4em;
+        width: 100%;
+    }
     .card-cake__label {
         font-size: 1.6em;
     }
