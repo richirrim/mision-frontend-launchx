@@ -21,6 +21,8 @@
 
     --header-height: 60px;
     --max-width: 1000px;
+    --gutter: 1em;
+    --grid-3-columns: calc(33% - var(--gutter));
 }
 
 
@@ -395,11 +397,7 @@ input[type="checkbox"][disabled] {
     $Toppings
 \*-----------------------*/
 .toppings {
-    --gutter: 1em;
     gap: var(--gutter);
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-wrap: nowrap; */
 }
     .toppings__title,
     .toppings__text {
@@ -414,10 +412,9 @@ input[type="checkbox"][disabled] {
     $Base cakes
 \*-----------------------*/
 .base-cakes {
-    --gutter: 1em;
+    gap: var(--gutter);
     text-align: center;
     align-items: center;
-    gap: var(--gutter);
 }
     .base-cakes__title {
         width: 100%;
@@ -428,7 +425,6 @@ input[type="checkbox"][disabled] {
     $Flavors
 \*-----------------------*/
 .flavors {
-    --gutter: 1em;
     gap: var(--gutter);
     justify-content: center;
 }
@@ -455,7 +451,7 @@ input[type="checkbox"][disabled] {
     $Card cakes
 \*-----------------------*/
 .card-cake {
-    flex-basis: calc(33% - var(--gutter));
+    flex-basis: var(--grid-3-columns);
     padding: 2em 1em;
     background-color: transparent;
     border: 1px solid var(--color-first);
@@ -480,7 +476,7 @@ input[type="checkbox"][disabled] {
     $Card flavor
 \*-----------------------*/
 .card-flavor {
-    flex-basis: calc(33% - var(--gutter));
+    flex-basis: var(--grid-3-columns);
     border: 1px solid var(--color-first);
     background-color: transparent;
     box-shadow: none;
@@ -522,7 +518,7 @@ input[type="checkbox"][disabled] {
     $Card toppings
 \*-----------------------*/
 .card-topping {
-    flex-basis: calc(33% - var(--gutter));
+    flex-basis: var(--grid-3-columns);
     border: 1px solid var(--color-first);
     background-color: transparent;
     box-shadow: none;
