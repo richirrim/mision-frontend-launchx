@@ -164,17 +164,17 @@ input[type="checkbox"][disabled] {
     border-radius: .3em;
     padding: .6em 1.8em .6em;
     color: var(--color-text);
-    background-color: var(--color-accent);
+    background-color: #fff;
     text-transform: uppercase;
-    text-align: center;
     font-weight: 700;
-    text-decoration: none;
     transition: all .3s;
     cursor: pointer;
 }
-    .button:active { transform: scale(.96); }
+    .button:active { 
+        transform: scale(.96); 
+    }
     .button:hover {
-        background-color: var(--color-accent);
+        background-color: var(--color-white);
     }
 
 
