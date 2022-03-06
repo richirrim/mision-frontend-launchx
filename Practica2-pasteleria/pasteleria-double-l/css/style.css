@@ -66,6 +66,8 @@ input[type="radio"]{
 input[type="checkbox"][disabled] {
     cursor: initial;
 }
+
+
 /*-----------------------*\
     $Layout
 \*-----------------------*/
@@ -90,6 +92,76 @@ input[type="checkbox"][disabled] {
 
 
 /*-----------------------*\
+    $Button
+\*-----------------------*/
+.button {
+    display: flex;
+    align-items: center;
+    border-radius: .3em;
+    padding: .6em 1.8em .6em;
+    color: var(--color-text);
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s;
+    cursor: pointer;
+}
+    .button:active { 
+        transform: scale(.96); 
+    }
+    .button:hover {
+        background-color: var(--color-white);
+    }
+
+
+/*-----------------------*\
+    $icons
+\*-----------------------*/
+[class*=icon-]::before {
+    --width: 1.5em;
+    content: "";
+    display: inline-block;
+    margin-right: .4em;
+    width: var(--width);
+    height: var(--width);
+}
+    [class*=icon-]:hover::before,
+    [class*=icon-]:focus::before {
+        filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
+    }
+.icon-cake::before {
+    content: "";
+    background-image: url("/icons/icon-cake.svg");
+    background-repeat: no-repeat;
+    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
+}
+.icon-star::before {
+    content: "";
+    background-image: url("/icons/icon-star.svg");
+    background-repeat: no-repeat;
+    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
+}
+.icon-card::before {
+    content: "";
+    background-image: url("/icons/icon-card.svg");
+    background-repeat: no-repeat;
+    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
+}
+.icon-location::before {
+    content: "";
+    background-image: url("/icons/icon-location.svg");
+    background-repeat: no-repeat;
+    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
+}
+.icon-phone::before {
+    content: "";
+    background-image: url("/icons/icon-phone.svg");
+    background-repeat: no-repeat;
+    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
+}
+
+
+/*-----------------------*\
     $Header
 \*-----------------------*/
 .main-header {
@@ -106,6 +178,9 @@ input[type="checkbox"][disabled] {
     .main-logo {
         width: initial;
         height: 4em;
+    }
+    .main-header__button {
+        background-color: var(--color-accent);
     }
     /* Coloca todo el contenido arriba de la hero image. */
     .main-header__content {
@@ -153,76 +228,6 @@ input[type="checkbox"][disabled] {
             height: .2em;
             width: 100%;
         }
-
-
-/*-----------------------*\
-    $Button
-\*-----------------------*/
-.button {
-    display: flex;
-    align-items: center;
-    border-radius: .3em;
-    padding: .6em 1.8em .6em;
-    color: var(--color-text);
-    background-color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    transition: all .3s;
-    cursor: pointer;
-}
-    .button:active { 
-        transform: scale(.96); 
-    }
-    .button:hover {
-        background-color: var(--color-white);
-    }
-
-
-/*-----------------------*\
-    $icons
-\*-----------------------*/
-[class*=icon-]::before {
-    --width: 1.5em;
-    content: "";
-    display: inline-block;
-    margin-right: .4em;
-    width: var(--width);
-    height: var(--width);
-}
-[class*=icon-]:hover::before,
-[class*=icon-]:focus::before {
-    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
-}
-.icon-cake::before {
-    content: "";
-    background-image: url("/icons/icon-cake.svg");
-    background-repeat: no-repeat;
-    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
-}
-.icon-star::before {
-    content: "";
-    background-image: url("/icons/icon-star.svg");
-    background-repeat: no-repeat;
-    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
-}
-.icon-card::before {
-    content: "";
-    background-image: url("/icons/icon-card.svg");
-    background-repeat: no-repeat;
-    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
-}
-.icon-location::before {
-    content: "";
-    background-image: url("/icons/icon-location.svg");
-    background-repeat: no-repeat;
-    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
-}
-.icon-phone::before {
-    content: "";
-    background-image: url("/icons/icon-phone.svg");
-    background-repeat: no-repeat;
-    filter: invert(16%) sepia(17%) saturate(743%) hue-rotate(155deg) brightness(92%) contrast(89%);
-}
 
 
 /*-----------------------*\
