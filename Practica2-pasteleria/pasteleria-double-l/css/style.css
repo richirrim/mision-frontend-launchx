@@ -379,15 +379,33 @@ h3 { font-size: var(--h3-font-size); }
     text-align: center;
 }
 
+/*-----------------------*\
+    $Toppings
+\*-----------------------*/
+.toppings {
+    --gutter: 1em;
+    gap: var(--gutter);
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+}
+    .toppings__title,
+    .toppings__text {
+        width: 100%;
+    }
+    .toppings__text {
+        font-size: 1.4em;
+    }
+
 
 /*-----------------------*\
     $Base cakes
 \*-----------------------*/
 .base-cakes {
-    --gab: 1em;
+    --gutter: 1em;
     text-align: center;
     align-items: center;
-    gap: var(--gab);
+    gap: var(--gutter);
 }
     .base-cakes__title {
         width: 100%;
@@ -397,7 +415,7 @@ h3 { font-size: var(--h3-font-size); }
     $Card cakes
 \*-----------------------*/
 .card-cake {
-    flex-basis: calc(33% - var(--gab));
+    flex-basis: calc(33% - var(--gutter));
     padding: 2em 1em;
     background-color: transparent;
     border: 1px solid var(--color-first);
@@ -470,6 +488,33 @@ h3 { font-size: var(--h3-font-size); }
     .card-flavor:nth-child(8) > .card-flavor__color {
         background-color: #ff8a65;
     }
+
+
+/*-----------------------*\
+    $Card toppings
+\*-----------------------*/
+.card-topping {
+    flex-basis: calc(33% - var(--gutter));
+    border: 1px solid var(--color-first);
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+    .card-topping__price {
+        display: inline-block;
+        width: 100%;
+        font-size: 1.4em;
+    }
+    .card-topping__image {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .5em;
+    }
+    .card-topping__label {
+        font-size: 1.6em;
+    }
+
 
 
 /*-----------------------*\
