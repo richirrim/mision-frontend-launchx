@@ -5,7 +5,7 @@ El objetivo de esta 2da parte del curso fue introducirnos a las bases del desarr
 
 ## 2da practica
 
-En la 2da práctica se pusieron a pruebas los conocimientos de HTML adquiridos en la semana, en esta nueva práctica  el mission comander puso varios niveles de complejidad para las personas que traían un poco más de conocimientos y si era así podías seguir escalando o simplemente quedarte hasta donde tu conocimiento y entendimiento te lo permitiera. 
+En la 2da práctica se pusieron a prueba los conocimientos de HTML adquiridos en la semana, en esta nueva práctica  el Mission comander (Rodrigo Martinez) puso varios niveles de complejidad para los Explorers que traían un poco más de conocimientos y si era así podías seguir escalando o simplemente quedarte hasta donde tu conocimiento y entendimiento te lo permitiera. 
 
 La práctica fue crear una pastelería en la cual un cliente podría crear o paralizar a su gusto un pastel. 
 
