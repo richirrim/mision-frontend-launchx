@@ -13,4 +13,4 @@ En mi caso maquete  y programe una landig page con navegación incluida que al 
 
 ## Preview de la landing page | Index.html
 
-[image preview - landing page | Pasteleria doublue l](https://repository-images.githubusercontent.com/463644862/0a62270d-6c33-4e83-9f39-aea6191135b2)
+![image preview - landing page | Pasteleria doublue l](https://repository-images.githubusercontent.com/463644862/0a62270d-6c33-4e83-9f39-aea6191135b2)
